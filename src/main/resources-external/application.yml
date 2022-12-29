@@ -1,0 +1,13 @@
+app:
+    name: SB Liquibase Test
+
+spring:
+    datasource:
+        name: sb-liquibase-test-ds
+        username: sbliquibasetest
+        password:
+        url: jdbc:h2:mem:sb-liquibase-test-db
+
+    liquibase:
+        enabled: true
+        change-log: classpath:changelog/db.changelog-root.yml
